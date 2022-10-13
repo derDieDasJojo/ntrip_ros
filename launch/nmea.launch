@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="ntrip_ros" type="nmea.py" name="ntrip_ros" output="screen">
+     <param name="nmea_topic" value="/ntrip_client/nmea"/>
+     <param name="nmea_gga" value="$GPGGA,164307.436,5044.211,N,00705.374,E,1,12,1.0,0.0,M,0.0,M,,*6D"/>
+  </node>
+</launch>
+
